@@ -1,0 +1,25 @@
+{
+  "name": "cricketh5new",
+  "version": "1.0.0",
+  "description": "cricket game for web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/pixi.js": "^4.8.1",
+    "http-server": "^0.11.1",
+    "package.json": "^2.0.1",
+    "path": "^0.12.7",
+    "pixi": "^0.3.1",
+    "pixi.js": "^4.8.2",
+    "ts-loader": "^5.2.0",
+    "typescript": "^3.0.3",
+    "webpack-cli": "^3.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.19.1"
+  }
+}
