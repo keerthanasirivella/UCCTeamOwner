@@ -1,11 +1,13 @@
 import * as PIXI from "pixi.js";
 import Controller from "./controller/Controller";
-import MainMenu from "./mainmenu/MainMenu";
+import MainMenu from "./screens/MainMenu";
+import Roster from "./screens/Roster";
 
 export default class Canvas extends PIXI.Container {
 	private _bg:PIXI.Sprite;
 	private _controller:Controller;
 	public ownerMainMenu:MainMenu;
+	public roster:Roster;
 
 	private _currentView:any;
 
@@ -18,8 +20,17 @@ export default class Canvas extends PIXI.Container {
 		// this._bg.position.x = 450;
 		// this._bg.position.y = 0;
 		// this.addChild(this._bg);
+
 		this.ownerMainMenu = new MainMenu(this._controller);
-		//this._currentView = this.ownerMainMenu;
 		this.addChild(this.ownerMainMenu);
+		
+		// this.roster = new Roster(this._controller);
+		// this.addChild(this.roster);
 	}
+
+	public init()
+	{
+		
+	}
+
 }
