@@ -3,8 +3,10 @@ import * as GSBridge from "./lib/GS_SDK_Bridge";
 
 
 export default class Server{
+	
 	private _controller:Controller;
 	private _sessionId:string;
+
 	constructor(controller:Controller) {
 		this._controller = controller;
 		GSBridge.GS_SDK_Init((response)=>{this.cb(response)}, (response)=>{this.cbOnMessage(response)});
